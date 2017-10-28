@@ -1,0 +1,20 @@
+language: csharp
+solution: TonNurako.sln
+install:
+- sudo apt-get -qq update
+- sudo apt-get -qq install libmotif-dev libxmu-dev libxt-dev
+
+before_deploy:
+  ./.travis.zip.sh
+
+deploy:
+  provider: releases
+  api_key:
+    secure: FczXZomaQoRd7UFSXIcz5bwlkbLdzNF8c6VCnaKxGn4uE68C6/+U6JXCi1XYMIq/NVaEJ22gwEBo4wGbK3PbQEuXKsl0E9f8UlpnW7MT55WzTLy9Hyg8kn8bPtpciXVSpHoP+M1t+lemqo+BCYB17dy4N2xUst9ErxcDdQAI9+JrIzoDAcvoKgGwiyEkIfY2/H/RSAuxVrm5YPt2G4JRWuZvinSdEkebtYvT1mLI36vI57PZT5iOyWJ22BX7USkPIxmyoH5Z2LIqcyllKY6MeyZfLijXWCLkFmLA7/lNXybH51fPUgfnMhGm3v+jw/IxzVmGaQbKfc5GRTfP+Am3CVZ6TfOt4B5bAKBJ9BJOCT5FERBkcCpOF+nJMqLImx6qHz94LKHNBAkkAiuKAaICWB97wDVWwg8YczFmYs8Sw5WAunkHzqGr5zAsuZM68jqDf0/E+Pbyi7rrubzEG/edCVfzTFM0086PW2zXv6KjbcXLoZe+xY4hbEf6f6Y6aic7QprtzVOpi9tFHeCiJ/HL638st1Iw//LVopPaRMkKCZ0CfbgckE6D7NXuHkNK803zCLIk2NpyT/4Nf6fwL6hR4/kwF9j5wvEt71kjL+fi5Jcs/+w2/uukpl+yjZwXyiW2yyBdVY0n8td1AmswvOXU8tid3TWl0mvUtYjhvXSM4VQ=
+  file: bin/zip/$TRAVIS_TAG.zip
+  skip_cleanup: true
+  on:
+    repo: sazae657/TnkEyes
+    all_branches: true
+    tags: true
+
