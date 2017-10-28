@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TnkEyes", "TnkEyes\TnkEyes.csproj", "{EE1D47BF-F0BE-4408-9FEA-B49022B216AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonNurako", "TonNurako\TonNurako.csproj", "{936E32EA-D5CB-41B5-B75A-A282DB26CC1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE1D47BF-F0BE-4408-9FEA-B49022B216AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE1D47BF-F0BE-4408-9FEA-B49022B216AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE1D47BF-F0BE-4408-9FEA-B49022B216AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE1D47BF-F0BE-4408-9FEA-B49022B216AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936E32EA-D5CB-41B5-B75A-A282DB26CC1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936E32EA-D5CB-41B5-B75A-A282DB26CC1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936E32EA-D5CB-41B5-B75A-A282DB26CC1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936E32EA-D5CB-41B5-B75A-A282DB26CC1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E55DD30-8737-4DCB-9195-1E3616E8D588}
+	EndGlobalSection
+EndGlobal
