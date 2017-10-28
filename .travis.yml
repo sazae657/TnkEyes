@@ -1,5 +1,5 @@
 language: csharp
-solution: TonNurako.sln
+solution: TnkEyes.sln
 install:
 - sudo apt-get -qq update
 - sudo apt-get -qq install libmotif-dev libxmu-dev libxt-dev
