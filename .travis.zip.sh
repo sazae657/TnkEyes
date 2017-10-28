@@ -7,5 +7,5 @@ fi
 rm -rf bin/zip
 mkdir bin/zip
 pushd bin
-zip -r zip/${TRAVIS_TAG}.zip Release || exit
+zip -r zip/x86_64-linux-${TRAVIS_TAG}.zip Release || exit
 popd
