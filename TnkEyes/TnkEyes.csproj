@@ -58,11 +58,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- Site.mp3生成 -->
-  <Target Name="TonNrakoConfig">
-    <PropertyGroup>
-      <MyCheck Condition="Exists('$(SolutionDir)/TonNurako/TonNurakoEx/Site.mp3')">true</MyCheck>
-      <MyCheck Condition="'$(MyCheck)'==''">false</MyCheck>
-    </PropertyGroup>
-    <Exec WorkingDirectory="$(SolutionDir)/TonNurako/TonNurakoEx/" Command="make audio" Condition="'$(MyCheck)' == 'false' AND '$(OS)' == 'Unix'" />
+  <Target Name="TonNrakoConfig"
+  Inputs="$(SolutionDir)/TonNurako/TonNurakoEx/Config.mp3"
+  Outputs="$(SolutionDir)/TonNurako/TonNurakoEx/Site.mp3"
+  Condition="'$(OS)' == 'Unix'">
+    <Exec WorkingDirectory="$(SolutionDir)/TonNurako/TonNurakoEx/" Command="make audio" />
   </Target>
 </Project>

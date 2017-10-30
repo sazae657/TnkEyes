@@ -12,11 +12,10 @@ https://cgit.freedesktop.org/xorg/app/xeyes/tree/?id=xeyes-1.1.1
 [![Build Status](https://travis-ci.org/sazae657/TnkEyes.svg?branch=master)](https://travis-ci.org/sazae657/TnkEyes)
 
 # 動作環境
-Mono 5.xが動作してXｻーﾊﾞーが動作するUnix系OS ( **macOS除く(※)** )
+Mono 5.xが動作してXｻーﾊﾞーが動作するUnix系OS
 
 WSL+ASTEC-X@Windows10でも動作します
 
-*※macOS SierraにてXRenderが正常に動作しない事を確認しました*
 
 # 動かし方
 ```
