@@ -107,7 +107,7 @@ namespace TnkEyes {
             if (null == option) {
                 return def;
             }
-            return TonNurako.X11.Color.AllocNamedColor(dpy, dpy.GetDefaultColormap(), option);
+            return TonNurako.X11.Color.AllocNamedColor(dpy, dpy.DefaultColormap, option);
         }
 
         public Eyes(EyesOptions option, TonNurako.ApplicationContext app) : base() {
