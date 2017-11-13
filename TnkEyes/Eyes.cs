@@ -215,6 +215,7 @@ namespace TnkEyes {
 
                         eyes.Fill[i] = TonNurako.X11.Extension.XRender.CreateSolidFill(dpy, new TonNurako.X11.Extension.XRenderColor(q, 0xFFFF));
                     }
+                    unity.Store<TonNurako.X11.Extension.Picture> (eyes.Fill);
                 }
 
                 Console.WriteLine("Initialize");
