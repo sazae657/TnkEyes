@@ -227,8 +227,8 @@ namespace TnkEyes {
                     TonNurako.X11.ChangeWindowAttributes.CWBackingStore;
 
                 var dpy = widget.Handle.Display;
-                attr.colormap = widgetRec.Colormap.Handle;
-                attr.backing_store = TonNurako.X11.BackingStoreHint.NotUseful;
+                attr.Colormap = widgetRec.Colormap.Handle;
+                attr.BackingStore = TonNurako.X11.BackingStoreHint.NotUseful;
                 Console.WriteLine($"Realize: M={mask}");
                 //TonNurako.Inutility.Dumper.DumpProperty(attr, (s) => Console.WriteLine($"Realize: {s}"));
                 XtSports.XtCreateWindow(widget, TonNurako.X11.WindowClass.InputOutput, TonNurako.X11.Visual.CopyFromParent, mask, attr);
